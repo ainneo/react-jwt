@@ -1,15 +1,14 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Nav() {
   return (
     <>
-      {/* NAV BAR */}
-
       <nav className="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
         <div>
-          <a className="navbar-brand" href="#">
+          <Link className="navbar-brand" to="/">
             Fixed navbar
-          </a>
+          </Link>
         </div>
 
         <div>
@@ -29,20 +28,18 @@ export default function Nav() {
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">
-                Home <span class="sr-only">(current)</span>
-              </a>
+              <Link class="nav-link" to="/signin">
+                Signin
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
-                Link
-              </a>
+              <Link className="nav-link" to="/register">
+                Register
+              </Link>
             </li>
           </ul>
         </div>
       </nav>
-
-      {/* END NAV BAR */}
     </>
   );
 }

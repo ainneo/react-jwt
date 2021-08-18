@@ -3,7 +3,7 @@ import React from "react";
 export default function Signin() {
   return (
     <div>
-      <main className="form-signin">
+      <main>
         <form>
           <h1 className="h3 mb-3 fw-normal">Please sign in</h1>
 
