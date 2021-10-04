@@ -5,3 +5,5 @@
   - now the backend is running on localhost:8000
 
   -\*\*\* for other backends: https://www.youtube.com/watch?v=OUP-urBy1k4
+  
+  - if you are running into issues connecting to the faux docker backend, remove user root from the docker ymal file: https://stackoverflow.com/questions/66831863/mysql-docker-container-keeps-restarting
