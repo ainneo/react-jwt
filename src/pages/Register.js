@@ -10,8 +10,7 @@ const Register = () => {
   const submit = async (e) => {
     e.preventDefault();
     //sending the request to the server using fetch
-    //but fetch is a get request but we need to make it a post request
-    // const response =
+    //but fetch is a get request - we need to make it a post request
     await fetch("http://localhost:8000/api/register", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
