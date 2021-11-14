@@ -9,9 +9,8 @@ const Register = () => {
 
   const submit = async (e) => {
     e.preventDefault();
-    //sedning the reques to the server using fetch
-    //this is a get request but we need to make it a post request
-    //so we will add the method below
+    //sending the request to the server using fetch
+    //but fetch is a get request but we need to make it a post request
     // const response =
     await fetch("http://localhost:8000/api/register", {
       method: "POST",
@@ -25,6 +24,7 @@ const Register = () => {
 
     // const content = await response.json();
     // console.log(content);
+    //if the response is sucessful then we need to redirect to the login page
     setRedirect(true);
   };
 
